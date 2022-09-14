@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from auth import bp
 
 app = Flask(__name__)
 
-app.register_blueprint(bp)
+# import auth
+# app.register_blueprint(auth.bp)
 
 
 @app.route("/")
